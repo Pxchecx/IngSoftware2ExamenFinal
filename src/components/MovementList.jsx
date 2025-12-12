@@ -4,6 +4,9 @@ import { Transfer } from '../models/Transfer';
 import { Payment } from '../models/Payment';
 import MovementCard from './MovementCard';
 import './MovementList.css';
+import { createMovement } from '../models/MovementFactory';
+const movements = movementListData.map(m => createMovement(m));
+
 
 // TODO: extract creation
 function createMovement(data) {
