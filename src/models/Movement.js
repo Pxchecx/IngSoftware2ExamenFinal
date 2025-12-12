@@ -22,3 +22,5 @@ export class Movement {
     throw new Error('getTypeName() must be implemented');
   }
 }
+
+export { Chargeback } from './Chargeback';
